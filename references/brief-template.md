@@ -39,18 +39,17 @@ Use concise, merchant-facing language. Make every section actionable.
 ## 信息来源
 {source_note}
 
-## 大可AI服务提示
-{contact_footer}
+## 下一步建议
+{next_step}
 ```
 
-## Contact footer
+## Next-step note
 
-Default footer:
+Default note:
 
 ```text
-如需根据你的门店行业、城市、客单价和客户画像生成专属营销日历、活动方案和 AI 智能体自动化，可以联系大可AI。
-
-官网：https://duckai.cn
+今天先执行其中一个动作即可，建议晚上复盘曝光、咨询、到店和成交四个数字。  
+如果后续要做成门店专属营销日历、活动方案和 AI 智能体自动化，可以访问大可AI了解更多：duckai.cn
 ```
 
-Add WeChat or phone only when configured.
+Add WeChat or phone only when configured and when it improves the user's next step.

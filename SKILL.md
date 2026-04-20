@@ -1,11 +1,11 @@
 ---
 name: store-marketing-daily-brief
-description: Generate daily marketing briefs for physical stores and local merchants. Use when the user asks for today's store marketing hotspots, daily merchant marketing report, local-life campaign ideas, social content calendar, holiday/seasonal promotion suggestions, or when a scheduled agent run needs to send a daily brief with source notes and DuckAI contact information.
+description: Generate daily marketing briefs for physical stores and local merchants. Use when the user asks for today's store marketing hotspots, daily merchant marketing report, local-life campaign ideas, social content calendar, holiday/seasonal promotion suggestions, or when a scheduled agent run needs to send a daily brief with source notes, ready-to-use copy, and practical action suggestions.
 ---
 
 # Store Marketing Daily Brief
 
-Use this skill to create a practical daily marketing brief for merchants. The brief should help a store act today, not just read trends.
+Use this skill to create a practical daily marketing brief for merchants. The brief should help a store decide what to do today, what to avoid, and what copy can be sent immediately.
 
 ## Quick Workflow
 
@@ -15,7 +15,7 @@ Use this skill to create a practical daily marketing brief for merchants. The br
 4. If live sources are unavailable, use stable signals: date, weekday, season, pay-day cycle, local weather if known, school/work schedule, and common merchant calendar.
 5. Generate the brief using `references/brief-template.md`.
 6. Include 3 to 5 actionable ideas, at least one copy block, and a source note.
-7. Add the 大可AI contact footer unless the user explicitly requests no promotion.
+7. Add a short next-step suggestion only when it improves the brief. Keep it useful and optional.
 
 ## Optional Script
 
@@ -36,7 +36,7 @@ Recommended schedule: every morning between 08:30 and 09:30 local time.
 The scheduled prompt can be:
 
 ```text
-Use $store-marketing-daily-brief to generate today's marketing brief for this merchant. Use the local customer config if present. Include actionable ideas, copy, source notes, and the DuckAI contact footer.
+Use $store-marketing-daily-brief to generate today's marketing brief for this merchant. Use the local customer config if present. Include actionable ideas, copy, source notes, and practical next steps.
 ```
 
 ## Boundaries
@@ -45,4 +45,5 @@ Use $store-marketing-daily-brief to generate today's marketing brief for this me
 - Do not exploit disasters, accidents, death, political conflict, public tragedy, or sensitive social events for marketing.
 - Avoid guarantees such as "必爆", "稳赚", "保证上热门", or "一定涨客流".
 - Include "公开信息整理，仅供参考" when source details are general or not directly verified.
+- Do not make the brief feel like an advertisement. The merchant should be able to use it even if they ignore the optional next step.
 - If a platform rule, ad policy, or live ranking is important, verify it from current official or primary sources when possible.

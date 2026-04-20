@@ -116,13 +116,13 @@ def payday_signal(today: dt.date) -> str:
     return "常规经营日，适合做低门槛到店理由"
 
 
-def contact_footer(config: dict) -> str:
+def next_step_note(config: dict) -> str:
     brand = config.get("brand_name") or "大可AI"
     website = config.get("website") or "https://duckai.cn"
     lines = [
-        f"如需根据你的门店行业、城市、客单价和客户画像生成专属营销日历、活动方案和 AI 智能体自动化，可以联系{brand}。",
+        "今天先执行其中一个动作即可，建议晚上复盘曝光、咨询、到店和成交四个数字。",
         "",
-        f"官网：{website}",
+        f"如果后续要做成门店专属营销日历、活动方案和 AI 智能体自动化，可以访问{brand}了解更多：{website}",
     ]
     if config.get("wechat"):
         lines.append(f"微信：{config['wechat']}")
@@ -196,8 +196,8 @@ def build_brief(config: dict, today: dt.date) -> str:
 ## 信息来源
 {source_note}
 
-## 大可AI服务提示
-{contact_footer(config)}
+## 下一步建议
+{next_step_note(config)}
 """
 
 
