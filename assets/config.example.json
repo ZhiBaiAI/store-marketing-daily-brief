@@ -1,0 +1,28 @@
+{
+  "brand_name": "大可AI",
+  "website": "https://duckai.cn",
+  "wechat": "",
+  "phone": "",
+  "default_city": "上海",
+  "target_industries": [
+    "餐饮",
+    "美业",
+    "教培",
+    "健身",
+    "零售",
+    "母婴",
+    "宠物",
+    "咖啡"
+  ],
+  "delivery_channel": "agent_chat",
+  "brief_time": "09:00",
+  "customer_profile": {
+    "store_name": "",
+    "city": "",
+    "industry": "",
+    "average_order_value": "",
+    "main_customer": "",
+    "channels": [],
+    "current_pain": ""
+  }
+}

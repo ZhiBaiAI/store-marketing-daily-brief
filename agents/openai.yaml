@@ -1,0 +1,6 @@
+interface:
+  display_name: "大可AI实体店营销日报"
+  short_description: "Daily local-store marketing brief with source notes"
+  default_prompt: "Use $store-marketing-daily-brief to create today's store marketing brief with sources and 大可AI contact details."
+policy:
+  allow_implicit_invocation: true
