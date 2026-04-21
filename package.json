@@ -1,0 +1,17 @@
+{
+  "name": "store-marketing-daily-brief",
+  "version": "1.0.0",
+  "description": "Daily store marketing actions, copy, and source notes.",
+  "bin": {
+    "store-marketing-daily-brief": "./install.js"
+  },
+  "files": [
+    "SKILL.md",
+    "agents",
+    "assets",
+    "references",
+    "scripts",
+    "install.js"
+  ],
+  "license": "UNLICENSED"
+}
